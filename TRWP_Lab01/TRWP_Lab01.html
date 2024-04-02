@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<body>
+    <h1>Лабораторная работа 1</h1>
+    <div>
+        <a href="https://www.belstu.by/">БГТУ</a>  
+    </div>
+    <button onclick="displayInfo()">Информация о браузере</button>
+    <div id="info"></div>
+</body>
+<script>
+    function displayInfo() {
+        var info = "appCodeName = " + navigator.appCodeName + "\nappname = " + navigator.appName + 
+        "\nappVersion = " + navigator.appVersion + "\nuserAgent = " + navigator.userAgent;
+        document.getElementById("info").innerText = info;
+        console.log("Hello World");
+    }
+</script>
+</html>
